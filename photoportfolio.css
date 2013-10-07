@@ -1,0 +1,101 @@
+/* Click to open portfolio */
+.portfolio {
+	cursor: hand;
+	cursor: pointer;
+	display: inline-block;
+}
+
+#portfolio-bigimg-mask,
+.portfolio-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-color: rgba(0,0,0,.9);
+    background-color: black;
+    text-align: center;
+    vertical-align: middle;
+    overflow: none;
+    z-index: 90;
+}
+
+#portfolio-bigimg-mask {
+    z-index: 100;
+}
+
+#portfolio-bigimg-mask img {
+    /*height: 900px;*/
+	z-index: 200;
+}
+
+.portfolio-container {
+    padding-top: 100px;
+}
+
+.portfolio-container h2 {
+    padding-top: 0;
+    margin-top: 0;
+    top: -18px;
+    color: #999;
+	font-style: italic;
+	font-weight: 100;
+}
+.portfolio-container h2 a {
+    color: #aaa;
+    background-image: none;
+}
+
+.portfolio-container img {
+    margin: 20px;
+    cursor: pointer; cursor: pointer;
+    display: inline;
+    border: 20px solid #222;
+}
+.portfolio-container img:hover {
+    border-color: #333;
+}
+
+#bigImgNavLeft, #bigImgNavRight {
+	cursor: hand; cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+	background: rgba(250,0,0,0.5);
+	color: rgba(250,250,250,0.5);
+	width: 40px;
+	height: 80px;
+	font-size: 50px;
+    text-shadow: 0px 0px 8pt rgba(5,5,5,0.6);
+    -webkit-box-shadow: 0px 0px 20px rgba(10, 10, 10, 0.2);
+    -moz-box-shadow:    0px 0px 20px rgba(10, 10, 10, 0.2);
+    box-shadow:         0px 0px 20px rgba(10, 10, 10, 0.5);
+	line-height: 80px;
+	font-weight: 100;
+	display: block;
+	position: absolute;
+	top: 40%;
+	z-index: 9999; /** Very top **/
+}
+#bigImgNavLeft {
+	cursor: w-resize;
+	left: 5px;
+	-webkit-border-top-right-radius: 12px;
+	-webkit-border-bottom-right-radius: 12px;
+	-moz-border-radius-topright: 12px;
+	-moz-border-radius-bottomright: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+}
+#bigImgNavRight {
+	cursor: e-resize;
+	right: 5px;
+	-webkit-border-top-left-radius: 12px;
+	-webkit-border-bottom-left-radius: 12px;
+	-moz-border-radius-topleft: 12px;
+	-moz-border-radius-bottomleft: 12px;
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+}
+
